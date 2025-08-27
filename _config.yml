@@ -1,0 +1,49 @@
+title: 傳統沖繩剛柔流空手道連盟(伝統沖縄剛柔流空手道連盟) 東恩納空手道場 台灣支部
+email: togkf.tw@gmail.com
+description: TOGKF，鏈結台灣與沖繩、鍛鍊正統沖繩剛柔流空手道。
+url: "https://togkf.tw"
+baseurl: "" # the subpath of your site, e.g. /blog
+
+lang: zh-TW
+timezone: Asia/Taipei
+
+# Build settings
+theme: null
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# collections:
+#   about:
+#     output: true
+#     permalink: /about/:name/
+#   training:
+#     output: true
+#     permalink: /training/:name/
+
+# defaults:
+#   - scope: { path: "", type: "about" }
+#     values: { layout: section }
+#   - scope: { path: "", type: "training" }
+#     values: { layout: section }
+
+# 導覽列（供第二層 Banner 用）
+nav:
+  - title: 首頁
+    url: /
+  - title: 關於
+    url: /about/
+  - title: 沖繩剛柔流空手道
+    url: /gojuryu/
+  - title: 傳統沖繩剛柔流空手道連盟(TOGKF)
+    url: /togkf/
+  - title: TOGKF 台灣支部
+    url: /togkf-taiwan/
+  - title: 道場訓
+    url: /dojo-kun/
+  - title: 鍛鍊體系
+    url: /system/
+  - title: 型列表
+    url: /kata/
+  - title: 聯絡方式
+    url: /contact/

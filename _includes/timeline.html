@@ -1,0 +1,14 @@
+<div class="position-relative ps-4">
+  <span class="position-absolute top-0 start-0 translate-middle-y h-100 border-start" style="left:6px; opacity:.25;"></span>
+  <ul class="list-unstyled m-0">
+    {% for item in include.items %}
+    <li class="mb-3 position-relative">
+      <span class="position-absolute" style="left:-2px; top:6px; width:10px; height:10px; border-radius:9999px; background:#0d6efd;"></span>
+      <div class="d-flex align-items-baseline gap-3">
+        <span class="badge bg-light text-primary border">{{ item.year }}</span>
+        <p class="mb-0">{{ item.text }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

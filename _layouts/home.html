@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="carousel" id="carousel">
+    {% for img in page.carousel %}
+      <div class="slide">
+        <img src="{{ img.src | relative_url }}" alt="{{ img.alt | default: '照片' }}">
+      </div>
+    {% endfor %}
+    <button class="prev" aria-label="上一張">‹</button>
+    <button class="next" aria-label="下一張">›</button>
+  </div>
+</section>
+
+<section class="social-embed grid">
+  <div>
+    <!-- Facebook Page Plugin -->
+    <div id="fb-root"></div>
+    <div class="fb-page"
+         data-href="{{ site.data.site.social.facebook }}"
+         data-tabs="timeline"
+         data-width="500" data-height="600"
+         data-small-header="false"
+         data-adapt-container-width="true"
+         data-hide-cover="false" data-show-facepile="true">
+    </div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v18.0"></script>
+  </div>
+  <aside>
+    <h3>部落格</h3>
+    <p><a href="{{ site.data.site.external.blogger }}" target="_blank" rel="noopener">前往 Blogger 閱讀更多</a></p>
+    <!-- 若未來想抓 RSS，可改成預先產生靜態清單 -->
+  </aside>
+</section>
