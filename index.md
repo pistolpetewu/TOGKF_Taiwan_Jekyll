@@ -19,7 +19,7 @@ title: 首頁
       <!-- 形象照 1：照片 + Slogan -->
       <div class="masonry-item">
         <div class="card border-0 shadow-sm mb-4">
-          <img src="/assets/img/carousel-4.jpg" class="card-img-top" alt="團體合照" loading="lazy">
+          <img src="{{ '/assets/img/carousel-4.jpg' | relative_url }}" class="card-img-top" alt="形象照1" loading="lazy">
           <div class="card-body">
             <h5 class="card-title mb-1">沖繩剛柔流空手道</h5>
             <p class="card-text text-muted mb-0">最早命名的空手道流派，跨越百年以上的歷史。</p>
@@ -29,7 +29,7 @@ title: 首頁
       <!-- 形象照 2：照片 + Slogan -->
       <div class="masonry-item">
         <div class="card border-0 shadow-sm mb-4">
-          <img src="/assets/img/carousel-3.jpg" class="card-img-top" alt="訓練瞬間" loading="lazy">
+          <img src="{{ '/assets/img/carousel-3.jpg' | relative_url }}" class="card-img-top" alt="形象照2" loading="lazy">
           <div class="card-body">
             <h5 class="card-title mb-1">追求和平的武道</h5>
             <p class="card-text text-muted mb-0">互相敬重、修練心性、培養健康的體魄。</p>
